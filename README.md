@@ -18,7 +18,7 @@ else {
 										vscode.window.showErrorMessage(err);
 									}
 									else {
-										git.mergeFromTo(remote,'dev', function (err) {
+										git.merge('dev', function (err) {
 											if (err) {
 												console.log("error3:"+err);
 												vscode.window.showErrorMessage(err);
@@ -35,6 +35,7 @@ else {
 												});
 											}
 										});
+										
 									}
 								});
 							}
